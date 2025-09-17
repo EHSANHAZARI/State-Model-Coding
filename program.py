@@ -38,6 +38,8 @@ ROWS, COLS = 3, 3
 def in_bounds(r , c) : 
     return 0 <= r < ROWS and 0<= c < COLS
 
+# getting the postion from the user and also getting the next moves extract them through the loop check if its in boundary or not then 
+# assigning it to moves dictionary and retrunning it 
 def valid_moves_from(pos):
     """Return a dict of {direction: next_pos} for legal moves from pos."""
     r, c = pos
@@ -49,6 +51,7 @@ def valid_moves_from(pos):
     return moves
 
 
+# This is how girdis are displaying in our systme 
 def show_grid(pos):
     """Print the 3x3 grid and mark the current position with [*]."""
     r0, c0 = pos
