@@ -72,7 +72,6 @@ def show_grid(pos):
         print(" ".join(row_cells))
     print()  # blank line
 
-# --------- Step 4: FSM runner (one step) ---------
 def step(pos, direction):
     """
     Try to move from pos using 'direction'.
@@ -103,7 +102,6 @@ if __name__ == "__main__":
         pos = step(pos, mv)
         show_grid(pos)
 
-    # --------- Optional: Interactive mode ---------
     # Type moves yourself; type 'quit' to stop.
     print("Enter moves (up/down/left/right). Type 'quit' to exit.")
     while True:
